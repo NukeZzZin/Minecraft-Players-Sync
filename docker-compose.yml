@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+    server:
+        container_name: server
+        build:
+            dockerfile: dockerfile
+            context: ./
+        volumes:
+            - ./home/minecraft/express
+        ports:
+            - "8000:8000"
+        restart: always
