@@ -1,4 +1,4 @@
-FROM golang
+FROM node:16
 LABEL programmer "Nuke <86313547+NukeZzZin@users.noreply.github.com>"
 WORKDIR /home/minecraft/express
 COPY ["package.json", "package-lock.json*", "./"]
